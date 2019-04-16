@@ -1,6 +1,6 @@
 # Java Spring API IP Search
 
-[![Build Status](https://travis-ci.com/WiNTeR270/security-demo-react-redux.svg?branch=master)](https://travis-ci.com/WiNTeR270/security-demo-react-redux)
+[![Build Status](https://travis-ci.com/WiNTeR270/security-demo-java-api.svg?branch=master)](https://travis-ci.com/WiNTeR270/security-demo-java-api)
 
 This project is a demonstration of a lightweight Java Spring API that is intended as a service layer for a React/Redux application
 
