@@ -14,7 +14,7 @@ public class IpAddress {
 	/* Member fields. */
 	private String ip, city, region, country;
     private Boolean malicious;
-    private Integer zipCode;
+    private Integer postal;
     private Double latitude, longitude;
     
     public IpAddress (String ip) 
@@ -42,8 +42,8 @@ public class IpAddress {
 		return malicious;
 	}
 
-	public Integer getZipCode() {
-		return zipCode;
+	public Integer getPostal() {
+		return postal;
 	}
 
 	public Double getLatitude() {
@@ -74,8 +74,8 @@ public class IpAddress {
 		this.malicious = malicious;
 	}
 
-	protected void setZipCode(Integer zipCode) {
-		this.zipCode = zipCode;
+	protected void setPostal(Integer postal) {
+		this.postal = postal;
 	}
 
 	protected void setLatitude(Double latitude) {
@@ -94,7 +94,7 @@ public class IpAddress {
 		result.setCountry((String) data.get(IP_INFO_FIELD_NAME_COUNTRY));
 	    
 	    String postal = (String)data.get(IP_INFO_FIELD_NAME_POSTAL);
-	    result.setZipCode(!StringUtils.isEmpty(postal) ? Integer.parseInt(postal) : null);
+	    result.setPostal(!StringUtils.isEmpty(postal) ? Integer.parseInt(postal) : null);
 	    
 	    String loc = (String)data.get(IP_INFO_FIELD_NAME_LOCATION);
 	    if(!StringUtils.isEmpty(loc)) {

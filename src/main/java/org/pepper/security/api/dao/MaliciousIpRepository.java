@@ -39,7 +39,6 @@ public class MaliciousIpRepository {
     }
 
     public boolean isMalicious(String ip) {
-    	logger.debug("Checking if ip is malicious: " + ip);
         initialize();
         return REPOSITORY != null && REPOSITORY.contains(ip);
     }

@@ -27,9 +27,6 @@ public class IpAddressControllerIntegrationTest {
     @Autowired
     private MockMvc mvc;
     
-    @Autowired
-    private ObjectMapper objectMapper;
-    
     @MockBean
     private IpAddressService service;
  

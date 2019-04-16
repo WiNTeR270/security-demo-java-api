@@ -9,18 +9,14 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class IpAddressService {
-
-	private static Logger logger = LoggerFactory.getLogger(IpAddressService.class);
     private final MaliciousIpRepository maliciousRepo;
     
     @Autowired
     public IpAddressService(@Qualifier("maliciousIps") MaliciousIpRepository maliciousRepo) {
-    	logger.debug("constructor()");
         this.maliciousRepo = maliciousRepo;
     }
     
     public boolean isMalicious(String ip) {
-    	logger.debug("isMalicious(" + ip + ")");
     	return maliciousRepo.isMalicious(ip);
     }
 }
