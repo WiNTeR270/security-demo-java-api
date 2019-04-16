@@ -56,5 +56,12 @@ This project is a demonstration of a lightweight Java Spring API that is intende
 <ul>
     <li>Install Java JDK 12 and set it to your environment path</li>
     <li>Install Apache Maven and follow instructions: https://maven.apache.org/install.html</li>
+    <li>Open up a command line and run the following commands
+        <ul>
+            <li>Navigate to the root directory (e.g. 'cd DIRECTORY')
+            <li>mvn spring-boot:run</li>
+        </ul>
+    </li>
+    <li>Make note of the Tomcat port in use thats printed to the console (e.g. port 8080) as this will be needed to connect the React UI to this API</li>
 </ul>
 
