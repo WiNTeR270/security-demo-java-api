@@ -62,6 +62,6 @@ This project is a demonstration of a lightweight Java Spring API that is intende
             <li>mvn spring-boot:run</li>
         </ul>
     </li>
-    <li>Make note of the Tomcat port in use as this will be needed to connect the React UI to this API</li>
+    <li>Make note of the Tomcat port in use thats printed to the console (e.g. port 8080) as this will be needed to connect the React UI to this API</li>
 </ul>
 
